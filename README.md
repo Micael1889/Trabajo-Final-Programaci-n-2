@@ -1,2 +1,15 @@
-# Trabajo-Final-Programaci-n-2
-Aplicación web para digitalizar el sistema de pedidos en bares y restaurantes. Los clientes pueden pedir desde su mesa, pagar por Mercado Pago o efectivo, y llamar al mozo con un clic. Incluye panel de administración para gestionar productos en tiempo real.
+🍽 ServeMe
+
+ServeMe es una aplicación web diseñada para restaurantes y bares que permite a los clientes realizar pedidos y pagos directamente desde su mesa, sin necesidad de mozos tradicionales. Mejora la eficiencia del servicio y reduce los tiempos de espera.
+
+—------------------------------------------------------------------------------------—
+
+🚀 Características principales
+
+- 📱 Menú digital accesible desde el celular del cliente.
+- 🛒 Carrito de compras con selección de productos.
+- 💳 Confirmación de pedido con pago en efectivo o Mercado Pago.
+- 🧑‍🍳 Panel de administración con gestión de productos (alta, modificación y baja).
+- 📣 Función de “llamar al mozo” desde la app con notificación al panel.
+- 🔔 Notificaciones interactivas mediante SweetAlert2.
+- 🖼 Interfaz moderna y responsiva
