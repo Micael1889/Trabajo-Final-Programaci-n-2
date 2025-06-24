@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panel de administración</title>
+  <link rel="icon" href="../static/img/iconazo.ico" />
+  <!-- Box icons -->
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="../static/Css/style.css" />
+</head>
+<body>
+  <main>
+    <div class="navBar">
+      <div class="logoCont">
+        <div class="nombreLogo">ServeMePanel</div>
+        <i class='bx bx-menu' id="despBoton"></i> 
+      </div>
+
+      <ul class="navCont">
+        <li>
+          <a href="#">
+            <i class='bx bx-takeaway'></i> 
+            <span class="links" id="ordenesBtn">Órdenes</span>
+          </a>
+          <span class="toolTip">Órdenes</span>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class='bx bx-fridge'></i>  
+            <span class="links" id="crudProductos">Productos</span>
+          </a>
+          <span class="toolTip">Productos</span>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class='bx bx-credit-card-front'></i>   
+            <span class="links" id="btnAvisos">Avisos</span>
+          </a>
+          <span class="toolTip">Avisos</span>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class='bx bx-alert-circle llamado'></i>   
+            <span class="links">Notificar Mozo</span>
+          </a>
+          <span class="toolTip">Notificar Mozo</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h1 class="titulo-panel">Panel</h1>
+    </div>
+
+    <section id="contenidoPanel"></section>
+  </main>
+
+  <!-- Scripts -->
+  <script src="../static/Js/panel.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

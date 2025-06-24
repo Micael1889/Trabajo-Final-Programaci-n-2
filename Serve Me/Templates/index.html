@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../static/Css/style.css">
+   <link rel="icon" href="../static/img/iconazo.ico">
+   <title>ServeMe</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="carta">
+    <header class="carta-header">
+        
+        <!-- NAV SUPERIOR -->
+        <nav class="nav-superior">
+            <img src="../static/img/iconazo.png" alt="" width="10%">
+            <div class="divIcono">
+                <img  src="../static/img/iconoLlamarMozo.png" alt="" width="15%">
+                <img class="llamado imgIcono" src="../static/img/llamarMozoPart2.png" alt="" width="10%">
+            </div>
+        </nav>
+    </header>
+    
+    <div id="overlay-carrito" style="display: none;" class="overlay-carrito"></div>
+
+<section id="carrito-desplegable" class="carrito-modal" style="display: none;">
+  <button class="cerrar-carrito" onclick="toggleCarrito()">✖</button>
+  <h2 class="titulo-carrito">Productos agregados</h2>
+  <div id="contenedor-productos-carrito"></div>
+  <div class="subtotal">Subtotal: $0</div>
+    <div class="botones-pago">
+      <button class="btn-mercado" onclick="confirmarPedido('mercado')">Mercado Pago</button>
+      <button class="btn-efectivo" onclick="confirmarPedido('efectivo')">Efectivo</button>
+    </div>
+</section>
+    <main class="carta-main">
+    <section class="contenedor-avisos">
+    </section>
+    <section class="contenedor-categorias carousel"> 
+    </section> 
+    <section class="list-prod ">
+    </section>
+    </main>
+    <footer class="carta-footer">
+  <nav class="nav-inferior">
+    <div class="boton-inferior">
+      <button onclick="toggleCarrito()" style="background: none; border: none;">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+          <path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/>
+        </svg>
+        <p id="cant"></p>
+        <p>orden</p>
+      </button>
+    </div>
+
+    <div>
+      <h2 id="montoTotal"></h2>
+    </div>
+
+    <div class="boton-inferior">
+      <a href="">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+          <path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/>
+        </svg>
+        <p>inicio</p>
+      </a>
+    </div>
+  </nav>
+</footer>
+    <script src="../static/Js/index1.js"></script>
+</body>
+</html>
